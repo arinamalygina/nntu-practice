@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Задачи</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 20px;
+    }
+    
+    .block {
+      width: 1500px;
+      background-color: transparent;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+      border-radius: 10px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    h2 {
+      margin: 20px;
+    }
+    h3 {
+      margin: 30px;
+    }
+  </style>
+
+ </head>
+ <body>
+<body background="C:/Users/Arina/Downloads/back 2 0/zz/templates/Задачи проекта.png">
+ <header>
+  <button> 
+   <div class="transparent-button">
+    <a class="link" href="main.html">Главная</a>
+    <a class="link" href="about us.html">О нас</a>
+    <a class="link active" href="tasks.html">Задачи проекта</a>
+   </div>
+  </button>
+ </header>
+
+  <h1>Разработка веб-сервиса для анализа видеопотока</h1>
+
+   <div class="container">
+    <div class="block">
+     <h2>1. Архитектура системы</h2>
+      <h3>Компоненты системы:</h3>
+       <h4> -Камера наблюдения: Источник видеопотока.</h4>
+       <h4> -Веб-сервер: Интерфейс для взаимодействия с пользователями и обработка запросов.</h4>
+       <h4> -Модуль обработки видео: Обработка видеопотока, выделение объектов (людей, автомобилей), отслеживание и распознавание признаков.</h4>
+       <h4> -База данных: Хранение статистики и метаданных.</h4>
+       <h4> -Модуль анализа: Анализ данных, генерация отчетов и статистики.</h4>
+      <h3>Поток данных:</h3>
+       <h4>    1. Камера наблюдения передает видеопоток в реальном времени на сервер.</h4>
+       <h4>    2. Веб-сервер принимает видеопоток и передает его в модуль обработки видео.</h4>
+       <h4>    3. Модуль обработки видео выделяет на каждом кадре людей и автомобили, отслеживает их движение между кадрами, распознает их признаки.</h4>
+       <h4>    4. Результаты анализа записываются в базу данных.</h4>
+       <h4>    5. Модуль анализа обрабатывает данные из базы данных и предоставляет отчеты и статистику пользователям через веб-сервер.</h4>
+    </div>
+    <div class="block">
+     <h2>2. Технологический стек</h2>
+       <h4>    1. Язык программирования: Python (OpenCV, TensorFlow/PyTorch)</h4>
+       <h4>    2. Веб-сервер: Flask/Django</h4>
+       <h4>    3. База данных: PostgreSQL/MySQL</h4>
+       <h4>    4. Видеообработка: OpenCV, TensorFlow/PyTorch для моделей машинного обучения</h4>
+       <h4>    5. Фронтенд: HTML, CSS, JavaScript (React/Vue.js)</h4>
+    </div>
+   </div>
+
+ </body>
+</html>
